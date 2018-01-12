@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="comment's.js"></script>
+  <script src="indexeddb.js"></script>
+  <script src='js/scroolreveal.js'></script>
+  <script src='js/magnific-popup.js'></script>
 
 </head>
 <body> <nav class="navbar navbar-expand-lg  navbar navbar-dark bg-dark" >
@@ -54,75 +58,71 @@
 
 
 
-<h2>Про предмет</h2>
+  <style>
+  .form, textarea, input {
+      border: 2px solid #222831;
+      background-color: #393E46;
+       border-radius: 16px;
+       color: white;
+       display: inline-block;
+       font-size: 16px;
+       cursor: pointer;
+       outline: none;
+       text-align: center;
+       text-decoration: none;
+        padding: 6px auto;
+      }
+  </style>
 
-<div class="aboutSubject">
-<h3>Мета</h3>
-<p>
-  Засвоєння студентами положень актів цивільного законодавства,
-регулюють правовий статус засновників (учасників) господарських товариств;
-усвідомлення зростаючої ролі прав учасників господарських товариств у
-задоволенні майнових інтересів фізичних і юридичних осіб та інших суб’єктів
-цивільних правовідносин; ознайомлення з підставами набуття, особливостями
-здійснення та захисту, а також порядком припинення прав засновників (учасників)
-господарських товариств; підготовка спеціалістів високого рівня для правового
-обслуговування фізичних та юридичних осіб, які мають статус учасника
-господарського товариства.
-</p>
-<h3>Предмет</h3>
-<p>
-  Цивільне законодавство, яке регулює відносини щодо набуття, здійснення,
-захисту та припинення цивільних прав засновників (учасників) господарських
-товариств.
-</p>
-<h3>Зміст</h3>
-<p>
-  Поняття та місце права засновників (учасників) господарських товариств у
-системі права Eкраїни. Правовідносини засновників (учасників) господарських
-товариств. Набуття, здійснення і захист, припинення прав засновників (учасників)
-господарських товариств. Набуття та припинення цивільно-правового статусу
-засновників акціонерних товариств та акціонерів. Здійснення і захист прав
-засновників акціонерних товариств та акціонерів. Цивільно-правовий статус
-засновників (учасників) товариств з обмеженою або додатковою відповідальністю.
-Цивільно-правовий статус засновників (учасників) повного та командитного
-товариств.
-</p>
-<h3>Місце у навчальному процесі</h3>
-<p>
-  Обов'язкова, 1 семестр. У результаті вивчення дисципліни «Цивільно-правовий статус засновників
-(учасників) господарських товариств» здобувач вищої освіти повинен знати:
-</p>
-<ul>
-  <li>
-    джерела правового регулювання правового статусу засновників (учасників)
-господарських товариств;
-  </li>
-  <li>
-    особливості здійснення та захисту прав учасників різних господарських товариств
-(акціонерних, товариств з обмеженою та додатковою відповідальністю, повних і
-командитних товариств);
-  </li>
-  <li>
-    підстави набуття та припинення прав засновників (учасників) господарських
-товариств;
-  </li>
-</ul>
-<p>
-  Вміти:
-</p>
-<ul>
-  <li>
-    правильно застосовувати законодавство, що регулює правовий статус засновників
-(учасників) господарських товариств;
-  </li>
-  <li>
-    складати проекти локальних правових актів господарських товариств, а також
-окремих процесуальних документів;
-  </li>
-  <li>
-    аналізувати практичні казуси.
-  </li>
-</ul>
+
+
+
+  <div class="container" style=" margin-top:60px">
+	<div class="main-text">
+		<div class="h1">
+			<center><h1>Відгуки</h1>
+	</div>
+	<br>
+
+		<div id="reviews-list">
+			<div class="container card">
+				<span class="review-author">Кулик Назар</span>
+				<span class="review-date">11.11.2017, 14:00</span>
+				<p>
+					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus eget ipsum nec vulputate.
+					Sed vestibulum augue vel dictum imperdiet. Duis sed augue posuere, tempus diam vitae, efficitur
+					ligula. Ut nec neque condimentum, vehicula ligula bibendum, bibendum lacus. Maecenas consectetur
+					hendrerit laoreet. Donec massa nunc, mattis ut auctor non, lobortis a mauris. Donec commodo, ex eget
+					gravida ornare, leo eros egestas mauris, nec pulvinar ipsum turpis eu urna. Donec suscipit purus
+					velit, sit amet vehicula erat consequat ac. Donec pretium mattis justo, eu finibus dolor scelerisque
+					non. Fusce risus ipsum, lobortis in maximus ut, tincidunt sit amet lacus. Nullam efficitur lectus at
+					mauris gravida, in tristique quam faucibus. Etiam sagittis cursus lorem, eu dapibus nisi accumsan a.
+					Sed ultricies felis ut tortor blandit tempor.
+				</p><br>
+			</div>
+		</div>
+		<br><br>
+		<form class="container card" id="form">
+			<div class="h3">
+			<center><h3>Новий відгук</h3>
+		</div>
+			<div class="form-group">
+				<div class="col-xs-12">
+					<input id="name" type="text" class="form-control" placeholder="Your Name">
+				</div>
+				<br><br>
+				<div class="col-xs-12">
+					<textarea id="text" class="form-control" rows="7" placeholder="New comments..."></textarea>
+					<br>
+					<label><input type="checkbox"> Remember me</label>	&nbsp;
+					<input type="button" value="Send" class="btn btn-primary" onclick="addReview()">
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+
 </div>
 
 <footer>
@@ -131,6 +131,3 @@
   <a href="mailto:someone@example.com">stepanper64@gmail.com </a>
 </p>
 </footer>
-
-</body>
-</html>

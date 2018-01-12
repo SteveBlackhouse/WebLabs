@@ -1,0 +1,17 @@
+CACHE MANIFEST
+
+CACHE:
+index.html
+Admin.html
+comment's.html
+contact.html
+lab3.css
+css\bootstrap.min.css
+3.jpg
+4.jpg
+5.jpg
+6.jpg
+2.jpg
+
+FALLBACK:
+offline.html
